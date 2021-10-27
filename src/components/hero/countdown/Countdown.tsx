@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 
-import updateCountdown from './updateCountdown';
+import updateCountdown from './useUpdateCountdown';
 import styles from './Countdown.module.css';
 
 const Countdown = () => {
-  const [countdownDate, setCountdownDate] = useState(new Date('11/04/2021').getTime());
+  const [countdownDate] = useState(new Date('11/04/2021').getTime());
   const [time, setTime] = useState({
     days: 0,
     hours: 0,

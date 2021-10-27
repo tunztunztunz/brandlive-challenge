@@ -1,0 +1,23 @@
+.videoContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  height: 27vw;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.reactPlayer {
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+@media screen and (min-width: 1024px) {
+  /* This is the setting that makes it match the designs on most desktop viewports. I may add another breakpoint to account for small desktops and pads. This attribute is also different than the .sectionHeader
+  property in the Presenter component because it needs to be slightly larger (more horizontal space) per the
+  design. */
+  .sectionHeader {
+    max-width: 70%;
+  }
+}

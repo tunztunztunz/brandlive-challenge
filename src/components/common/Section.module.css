@@ -1,3 +1,49 @@
 .section {
-  padding: 0 18rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0 2rem 10rem;
+
+}
+
+
+/* desktop layout */
+@media screen and (min-width: 1024px) {
+  .section {
+    padding: 4rem 11.5rem 0;
+    background-size: auto;
+  }
+
+  /* To account for the spacing on the bottom of the document. */
+  .section:last-child{
+    margin-top: -1rem;
+    padding: 5rem 12rem 2rem 12rem;
+  }
+}
+
+/* So the background doesn't get cut off on 2k and ultrawide */
+@media screen and (min-width: 2560px) {
+  .section {
+    background-size: cover;
+  }
+}
+
+.sectionHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  max-width: 100%;
+}
+
+.sectionHeader h2 {
+  margin: 0 0 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+/* This is the setting that makes it match the designs on most desktop viewports. I may add another breakpoint to account for small desktops and pads. */
+  .sectionHeader {
+  max-width: 50%;
+  }
 }

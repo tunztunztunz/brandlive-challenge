@@ -1,0 +1,21 @@
+.footerContainer {
+  display: grid;
+  grid-template-columns: .4fr 3fr .4fr;
+  grid-gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.footerContainer img {
+  height: auto;
+  max-width: 100%;
+}
+
+.terms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.terms span:nth-child(1) {
+  margin-right: 2rem;
+}

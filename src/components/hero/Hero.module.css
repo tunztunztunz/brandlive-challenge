@@ -1,21 +1,41 @@
 .heroSection {
   display: flex;
   justify-content: space-around;
+  flex-direction: column-reverse;
 }
 
 .textContainer {
-  flex-basis: 100%;
-  max-width: 43%;
-  margin-right: 4rem;
+  
 }
 
 .imageContainer {
-  max-width: 65%;
-  margin-right: -8rem;
-  margin-top: -6rem;
+  display: block;
+  max-height: 70vw;
 }
 
 .heroImage {
   max-width: 100%;
+  max-height: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .heroSection {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+.textContainer {
+    max-height: 100%;
+    max-width: 45%;
+    margin-right: 0rem;
+  }
+  .imageContainer {
+    max-width: 55%;
+    margin-right: -2.25rem;
+    margin-top: -4rem;
+  }
+  .heroImage {
+    max-width: 112%;
+    max-height: auto;
+  }
 }
 

@@ -2,24 +2,29 @@
 
 p {
   font-weight: 300;
-  font-size: 20px;
-  line-height: 1.8rem;
+  font-size: .74rem;
+  line-height: 1.25rem;
+  letter-spacing: .075px;
 }
 
 .xs {
-  font-size: 0.8rem;
+  display: block;
+  font-size: 0.5rem;
   font-weight: 800;
   text-transform: uppercase;
+  margin-bottom: .5rem;
 }
 
+
 .lg {
-  font-size: 2.75rem;
+  font-size: 1.6rem;
   font-weight: 800;
 }
 
 .xl {
-  font-size: 3.4rem;
-  font-weight: 750;
+  font-size: 2.25rem;
+  font-weight: 650;
   color: var(--color-white);
   margin: 0;
 }
+

@@ -1,4 +1,6 @@
 /* Setting these global css variables in case I need them. I defined white in case it ever had to change. */
+@import-normalize;
+
 :root {
   --color-white: #fff;
   --color-black: #000;
@@ -6,6 +8,11 @@
   --color-yellow: #F6D975;
   --color-pink: #FBADD8;
   --color-secondary-blue: #AAE3ED;
+}
+
+*{
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -19,5 +26,25 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
+}
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1024 - 300)));
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: calc(10px + (24 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+}
+
+@media only screen and (min-width: 2450px) {
+  html {
+    /* font-size: 30px; */
+    font-size: calc(38px + (50 - 38) * ((100vw - 2560px) / (3440 - 2540)));
+  }
+  
 }

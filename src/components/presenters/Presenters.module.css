@@ -1,0 +1,53 @@
+.biosContainer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin-top: 2rem;
+}
+
+.biosContainer img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 55%;
+  border-radius: 15px;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+}
+
+.bio h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: .75rem 0 .5rem;
+}
+
+.bio h4 {
+  font-size: .75rem;
+  font-weight: 700;
+  margin: 0 0 .5rem;
+}
+
+.bio p {
+  font-size: .65rem;
+  line-height: 1rem;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+/* Desktop styles */
+@media screen and (min-width: 1024px) {
+
+  .biosContainer {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  /* This is the setting that makes it match the designs on most desktop viewports. I may add another breakpoint to account for small desktops and pads. */
+  .textContainer {
+  max-width: 50%;
+}
+}
