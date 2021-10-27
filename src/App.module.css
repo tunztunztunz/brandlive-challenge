@@ -1,0 +1,25 @@
+@import './index.css';
+
+p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.8rem;
+}
+
+.xs {
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.lg {
+  font-size: 2.75rem;
+  font-weight: 800;
+}
+
+.xl {
+  font-size: 3.4rem;
+  font-weight: 750;
+  color: var(--color-white);
+  margin: 0;
+}

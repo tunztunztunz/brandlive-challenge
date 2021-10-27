@@ -1,3 +1,13 @@
+/* Setting these global css variables in case I need them. I defined white in case it ever had to change. */
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-blue: #7FE2FB;
+  --color-yellow: #F6D975;
+  --color-pink: #FBADD8;
+  --color-secondary-blue: #AAE3ED;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

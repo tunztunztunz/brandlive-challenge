@@ -1,0 +1,21 @@
+.heroSection {
+  display: flex;
+  justify-content: space-around;
+}
+
+.textContainer {
+  flex-basis: 100%;
+  max-width: 43%;
+  margin-right: 4rem;
+}
+
+.imageContainer {
+  max-width: 65%;
+  margin-right: -8rem;
+  margin-top: -6rem;
+}
+
+.heroImage {
+  max-width: 100%;
+}
+
