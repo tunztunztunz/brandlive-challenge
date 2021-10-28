@@ -26,7 +26,7 @@ I tried to match the styles as closely as possible without actually having acces
 
 I decided to use css modules instead of a css framework because it felt a little overkill to bring one in for such a small project. If the project were much larger in scope I may consider using one or a tool like SASS/PostCSS.
 
-If I had more time, I would work on writing a test or two with jest to make sure the interactive elements on the page were running correctly.
+I wrote some very simple tests in Jest.js. If I had some more time to spend on the project, I would do more research on Jest's mocking function and maybe dig deeper on the countdown clock testing.
 
 ## Available Scripts
 
