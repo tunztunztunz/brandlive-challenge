@@ -8,7 +8,7 @@ import Countdown from "./countdown/Countdown";
 
 
 
-const Hero = () => {
+const HeroSection = () => {
   return (
     <Section backgroundColor={colors.blue} className={styles.heroSection}>
       <div className={styles.textContainer}>
@@ -24,4 +24,4 @@ const Hero = () => {
   )
 }
 
-export default Hero;
+export default HeroSection;

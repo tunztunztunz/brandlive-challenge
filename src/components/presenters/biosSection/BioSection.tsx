@@ -1,31 +1,43 @@
+import { useEffect, useState } from 'react';
+import Bio from './Bio';
+
 import styles from '../Presenters.module.css';
 
-import sam from '../../../images/sam.jpg'
-import thomas from '../../../images/thomas.jpg'
-import gabi from '../../../images/gabi.jpg'
+import samImage from '../../../images/sam.jpg';
+import thomasImage from '../../../images/thomas.jpg';
+import gabiImage from '../../../images/gabi.jpg';
+
+import samText from '../../../text/sam.json';
+import thomasText from '../../../text/thomas.json';
+import gabiText from '../../../text/gabi.json';
+import Modal from '../../common/Modal';
 
 const BioSection = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  // Run checks to see if modal is open. If it is, then lock scroll. Otherwise, unlock scroll.
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  }, [isOpen])
 
   return (
     <div className={styles.biosContainer}>
         <div className={styles.bio}>
-          <img src={sam} alt="sam kolbert" />
-          <h3>Sam Kolbert-Hyle</h3>
-          <h4>President & CEO of Brandlive</h4>
-          <p>Under Sam's leadership, Brandlive was recognized by Fast Company as thr #1 most...</p>
+          {isOpen && <Modal setIsOpen={setIsOpen} name={samText.name} position={samText.position} bio={samText.bio} />}
+          <Bio setIsOpen={setIsOpen} name={samText.name} position={samText.position} bio={samText.bio} image={samImage} />
         </div>
         <div className={styles.bio}>
-          <img src={thomas} alt="sam kolbert" />
-          <h3>Thomas Iwasaki </h3>
-          <h4>Chief Product Officer</h4>
-          <p>Thomas expertly leads all marketing and communication efforts, as well as the produ...</p>
+          {isOpen && <Modal setIsOpen={setIsOpen} name={thomasText.name} position={thomasText.position} bio={thomasText.bio} />}
+          <Bio setIsOpen={setIsOpen} name={thomasText.name} position={thomasText.position} bio={thomasText.bio} image={thomasImage} />
         </div>
         <div className={styles.bio}>
-          <img src={gabi} alt="sam kolbert" />
-          <h3>Sam Kolbert-Hyle</h3>
-          <h4>Product Marketing Manager</h4>
-          <p>FPO</p>
-        </div>
+          {isOpen && <Modal setIsOpen={setIsOpen} name={gabiText.name} position={gabiText.position} bio={gabiText.bio} />}
+          <Bio setIsOpen={setIsOpen} name={gabiText.name} position={gabiText.position} bio={gabiText.bio} image={gabiImage} />
+        </div> 
       </div>
   )
 }

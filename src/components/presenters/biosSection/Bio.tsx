@@ -1,12 +1,15 @@
+import truncate from '../../../utils/truncate';
+import BioInterface from '../../../interfaces/BioInterface';
 import styles from '../Presenters.module.css';
-// Use json files with text so they are easily retrievable. 
-const Bio = (image: string) => {
+
+const Bio = ({image, name, position, bio, setIsOpen}: BioInterface) => {
+  const truncatedBio = truncate(bio);
   return (
     <div className={styles.bio}>
-          <img src={image} alt="sam kolbert" />
-          <h3>Thomas Iwasaki </h3>
-          <h4>Chief Product Officer</h4>
-          <p>Thomas expertly leads all marketing and communication efforts, as well as the produ...</p>
+          <img src={image} alt={name} onClick={() => setIsOpen(true)} />
+          <h3>{name}</h3>
+          <h4>{position}</h4>
+          <p>{truncatedBio}</p>
         </div>
   )
 }

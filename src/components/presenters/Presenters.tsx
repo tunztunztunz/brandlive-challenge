@@ -8,7 +8,6 @@ import BioSection from "./biosSection/BioSection";
 
 
 const Presenters = () => {
-  console.log('stay')
   return (
     <Section backgroundColor={colors.yellow} backgroundImage={yellowdrip} className={styles.presentersContainer}>
       <div className={headerStyles.sectionHeader}>

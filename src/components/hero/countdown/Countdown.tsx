@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import updateCountdown from './useUpdateCountdown';
+import updateCountdown from '../../../utils/useUpdateCountdown';
 import styles from './Countdown.module.css';
 
 const Countdown = () => {
@@ -11,7 +11,6 @@ const Countdown = () => {
     minutes: '',
     seconds: ''
   })
-
   useEffect( () => {
     setInterval(() => {
       let timeObject = updateCountdown(countdownDate)
