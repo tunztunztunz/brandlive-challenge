@@ -3,9 +3,9 @@ const updateCountdown = (countdownDate: number) => {
   minute = second * 60,
   hour = minute * 60,
   day = hour * 24;
-
   if (countdownDate) {
     const currentTime = new Date().getTime();
+
     const distanceToEvent = countdownDate - currentTime;
 
     let days: number | string = Math.floor(distanceToEvent / day);
