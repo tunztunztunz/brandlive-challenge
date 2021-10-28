@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-
 import updateCountdown from '../../../utils/useUpdateCountdown';
 import styles from './Countdown.module.css';
 

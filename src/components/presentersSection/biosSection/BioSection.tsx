@@ -1,12 +1,9 @@
 import { useEffect, useState } from 'react';
 import Bio from './Bio';
-
 import styles from '../PresentersSection.module.css';
-
 import samImage from '../../../images/sam.jpg';
 import thomasImage from '../../../images/thomas.jpg';
 import gabiImage from '../../../images/gabi.jpg';
-
 import samText from '../../../text/sam.json';
 import thomasText from '../../../text/thomas.json';
 import gabiText from '../../../text/gabi.json';

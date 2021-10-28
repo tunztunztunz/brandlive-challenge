@@ -1,11 +1,10 @@
-import colors from "../../utils/colors";
+import BioSection from "./biosSection/BioSection";
 import Section from "../common/Section";
+import colors from "../../utils/colors";
 import yellowdrip from '../../images/bluedrip.png';
 import globalStyles from '../../App.module.css';
 import headerStyles from '../common/Section.module.css';
 import styles from './PresentersSection.module.css';
-import BioSection from "./biosSection/BioSection";
-
 import text from '../../text/presenters.json';
 
 const Presenters = () => {

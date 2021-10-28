@@ -1,11 +1,8 @@
 import Section from "../common/Section"
-
 import Countdown from "./countdown/Countdown";
 import colors from "../../utils/colors"
-
 import styles from './HeroSection.module.css';
 import globalStyles from '../../App.module.css';
-
 import wow from '../../images/wow.png';
 import text from '../../text/hero.json';
 

@@ -1,9 +1,7 @@
 import Section from "../common/Section";
 import colors from "../../utils/colors";
-
 import styles from './Footer.module.css';
 import globalStyles from '../../App.module.css';
-
 import brandlive from '../../images/brandlive.png';
 import streaming from '../../images/streaming.png';
 

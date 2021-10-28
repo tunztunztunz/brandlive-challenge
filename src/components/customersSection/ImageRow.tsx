@@ -1,5 +1,4 @@
 import styles from './CustomersSection.module.css';
-
 import adidas from '../../images/adidas.png';
 import herbalife from '../../images/herbalife.png';
 import levis from '../../images/levis.png';

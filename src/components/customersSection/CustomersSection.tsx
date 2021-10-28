@@ -1,14 +1,10 @@
 import Section from "../common/Section";
 import ImageRow from "./ImageRow";
-
 import colors from "../../utils/colors";
-
 import globalStyles from '../../App.module.css';
 import headerStyles from '../common/Section.module.css';
 import styles from './CustomersSection.module.css';
-
 import pinkdrip from '../../images/pinkdrip.png';
-
 import text from '../../text/customer.json';
 
 const CustomersSection = () => {
