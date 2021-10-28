@@ -10,7 +10,7 @@ import colors from '../../utils/colors';
 
 const VideoSection = () => {
   const videoLink = "https://www.youtube.com/watch?v=22jvi19akB8&ab_channel=Brandlive"
-  console.log('hold video')
+  
   return (
     <Section backgroundColor={colors.pink} backgroundImage={yellowdrip}>
       <div className={`${headerStyles.sectionHeader} ${styles.sectionHeader}`}>

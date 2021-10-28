@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Bio from './Bio';
 
-import styles from '../Presenters.module.css';
+import styles from '../PresentersSection.module.css';
 
 import samImage from '../../../images/sam.jpg';
 import thomasImage from '../../../images/thomas.jpg';

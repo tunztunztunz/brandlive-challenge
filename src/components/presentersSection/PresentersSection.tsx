@@ -3,7 +3,7 @@ import { Section } from "../common/Section";
 import yellowdrip from '../../images/bluedrip.png'
 import globalStyles from '../../App.module.css';
 import headerStyles from '../common/Section.module.css';
-import styles from './Presenters.module.css';
+import styles from './PresentersSection.module.css';
 import BioSection from "./biosSection/BioSection";
 
 

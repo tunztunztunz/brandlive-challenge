@@ -1,6 +1,6 @@
 import { Section } from "../common/Section"
 
-import styles from './Hero.module.css';
+import styles from './HeroSection.module.css';
 import globalStyles from '../../App.module.css';
 import wow from '../../images/wow.png';
 import colors from "../../utils/colors"

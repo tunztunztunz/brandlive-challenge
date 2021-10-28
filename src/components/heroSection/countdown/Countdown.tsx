@@ -11,6 +11,7 @@ const Countdown = () => {
     minutes: '',
     seconds: ''
   })
+  
   useEffect( () => {
     setInterval(() => {
       let timeObject = updateCountdown(countdownDate)

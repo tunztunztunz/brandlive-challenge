@@ -1,6 +1,6 @@
 import truncate from '../../../utils/truncate';
 import BioInterface from '../../../interfaces/BioInterface';
-import styles from '../Presenters.module.css';
+import styles from '../PresentersSection.module.css';
 
 const Bio = ({image, name, position, bio, setIsOpen, isOpen, setSelectedModal}: BioInterface) => {
   const truncatedBio = truncate(bio);
