@@ -1,9 +1,9 @@
 import ReactPlayer from 'react-player/lazy';
-import Section from '../common/Section';
+import Section from '../Common/Section';
 import colors from '../../utils/colors';
 import styles from './VideoSection.module.css';
 import globalStyles from '../../App.module.css';
-import headerStyles from '../common/Section.module.css';
+import headerStyles from '../Common/Section.module.css';
 import yellowdrip from '../../images/yellowdrip.png';
 import text from '../../text/video.json';
 

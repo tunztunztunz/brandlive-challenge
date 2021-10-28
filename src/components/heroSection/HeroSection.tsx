@@ -1,5 +1,5 @@
-import Section from "../common/Section"
-import Countdown from "./countdown/Countdown";
+import Section from "../Common/Section"
+import Countdown from "./Countdown/Countdown";
 import colors from "../../utils/colors"
 import styles from './HeroSection.module.css';
 import globalStyles from '../../App.module.css';

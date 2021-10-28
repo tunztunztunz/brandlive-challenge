@@ -1,4 +1,4 @@
-import Section from "../common/Section";
+import Section from "../Common/Section";
 import colors from "../../utils/colors";
 import styles from './Footer.module.css';
 import globalStyles from '../../App.module.css';

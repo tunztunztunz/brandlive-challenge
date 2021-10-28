@@ -7,7 +7,7 @@ import gabiImage from '../../../images/gabi.jpg';
 import samText from '../../../text/sam.json';
 import thomasText from '../../../text/thomas.json';
 import gabiText from '../../../text/gabi.json';
-import Modal from '../../common/Modal';
+import Modal from '../../Common/Modal';
 
 // I know this component has tons of imports and passing of props. I feel like there's a better way to do this (maybe breaking this down into even smaller pieces?), but I began running out of time to be able to refactor this sections of the project.
 const BioSection = () => {

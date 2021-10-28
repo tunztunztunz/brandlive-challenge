@@ -1,8 +1,8 @@
-import Hero from './components/heroSection/HeroSection';
-import Presenters from './components/presentersSection/PresentersSection';
-import VideoSection from './components/videoSection/VideoSection';
-import CustomersSection from './components/customersSection/CustomersSection';
-import Footer from './components/footer/Footer';
+import Hero from './components/HeroSection/HeroSection';
+import Presenters from './components/PresentersSection/PresentersSection';
+import VideoSection from './components/VideoSection/VideoSection';
+import CustomersSection from './components/CustomersSection/CustomersSection';
+import Footer from './components/Footer/Footer';
 
 import './index.css';
 
