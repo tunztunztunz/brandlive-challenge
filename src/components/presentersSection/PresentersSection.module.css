@@ -46,11 +46,10 @@
     grid-template-rows: repeat(1, 1fr);
     grid-gap: 1rem;
     margin-top: 2rem;
-    max-height: 55%;
   }
 
   .biosContainer img {
-    max-height: 30vw;
+    max-height: 50%;
   }
 
   /* This is the setting that makes it match the designs on most desktop viewports. I may add another breakpoint to account for small desktops and pads. */
