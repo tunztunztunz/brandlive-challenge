@@ -10,18 +10,19 @@ const Countdown = () => {
     hours: '',
     minutes: '',
     seconds: ''
-  })
+  });
   
   useEffect( () => {
     setInterval(() => {
-      let timeObject = updateCountdown(countdownDate)
+      let timeObject = updateCountdown(countdownDate);
       if (timeObject) {
         setTime(timeObject);
       }
-    }, 1000)
-  }, [countdownDate])
+    }, 1000);
+  }, [countdownDate]);
 
-  return (<div className={styles.clockContainer}>
+  return (
+  <div className={styles.clockContainer}>
     <ul>
       <li><span id="days">{time.days}</span>days</li>
       <li><span id="hours">{time.hours}</span>hours</li>
@@ -29,6 +30,6 @@ const Countdown = () => {
       <li><span id="seconds">{time.seconds}</span>seconds</li>
     </ul>
   </div>)
-}
+};
 
 export default Countdown;

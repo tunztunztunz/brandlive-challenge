@@ -28,7 +28,7 @@ const BioSection = () => {
     } else {
       document.body.style.overflow = 'auto';
     }
-  }, [isOpen])
+  }, [isOpen]);
 
   return (
     <div className={styles.biosContainer}>

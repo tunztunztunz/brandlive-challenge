@@ -1,6 +1,6 @@
 import colors from "../../utils/colors";
-import { Section } from "../common/Section";
-import yellowdrip from '../../images/bluedrip.png'
+import Section from "../common/Section";
+import yellowdrip from '../../images/bluedrip.png';
 import globalStyles from '../../App.module.css';
 import headerStyles from '../common/Section.module.css';
 import styles from './PresentersSection.module.css';
@@ -19,6 +19,6 @@ const Presenters = () => {
       <BioSection/>
     </Section>
   )
-}
+};
 
 export default Presenters;

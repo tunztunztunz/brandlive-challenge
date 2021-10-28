@@ -1,5 +1,5 @@
-import ReactPlayer from 'react-player/lazy'
-import { Section } from '../common/Section';
+import ReactPlayer from 'react-player/lazy';
+import Section from '../common/Section';
 
 import colors from '../../utils/colors';
 
@@ -7,13 +7,13 @@ import styles from './VideoSection.module.css';
 import globalStyles from '../../App.module.css';
 import headerStyles from '../common/Section.module.css';
 
-import yellowdrip from '../../images/yellowdrip.png'
+import yellowdrip from '../../images/yellowdrip.png';
 
 import text from '../../text/video.json';
 
 
 const VideoSection = () => {
-  const videoLink = "https://www.youtube.com/watch?v=22jvi19akB8&ab_channel=Brandlive"
+  const videoLink = "https://www.youtube.com/watch?v=22jvi19akB8&ab_channel=Brandlive";
   
   return (
     <Section backgroundColor={colors.pink} backgroundImage={yellowdrip}>

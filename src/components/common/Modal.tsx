@@ -5,7 +5,7 @@ const Modal = ({ setIsOpen, name, position, bio }: ModalInterface) => {
   
   return (
     <>
-    <div className={styles.darkBG} onClick={() => setIsOpen(false)} />
+    <div className={styles.background} onClick={() => setIsOpen(false)} />
     <div className={styles.centered}>
       <div className={styles.modal}>
         <button className={styles.closeBtn} onClick={() => setIsOpen(false)}>&times;</button>

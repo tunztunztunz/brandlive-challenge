@@ -1,4 +1,4 @@
-import { Section } from "../common/Section"
+import Section from "../common/Section"
 
 import Countdown from "./countdown/Countdown";
 import colors from "../../utils/colors"
@@ -24,6 +24,6 @@ const HeroSection = () => {
       </div>
     </Section>
   )
-}
+};
 
 export default HeroSection;

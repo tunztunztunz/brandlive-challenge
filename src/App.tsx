@@ -4,7 +4,7 @@ import VideoSection from './components/videoSection/VideoSection';
 import CustomersSection from './components/customersSection/CustomersSection';
 import Footer from './components/footer/Footer';
 
-import './index.css'
+import './index.css';
 
 
 
@@ -19,7 +19,7 @@ function App() {
       </main>
       <Footer/>
     </>
-  );
-}
+  )
+};
 
 export default App;

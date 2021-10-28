@@ -1,7 +1,7 @@
 import { SectionInterface } from "../../interfaces/SectionsInterface"
 import styles from './Section.module.css';
 
-export const Section = ({backgroundImage, backgroundColor, children, className}: SectionInterface) => {
+const Section = ({backgroundImage, backgroundColor, children, className}: SectionInterface) => {
   
   return (
     <section style={{
@@ -13,4 +13,6 @@ export const Section = ({backgroundImage, backgroundColor, children, className}:
       {children}
     </section>
   )
-}
+};
+
+export default Section;

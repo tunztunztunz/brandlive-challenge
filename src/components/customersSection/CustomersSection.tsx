@@ -1,4 +1,4 @@
-import { Section } from "../common/Section";
+import Section from "../common/Section";
 import ImageRow from "./ImageRow";
 
 import colors from "../../utils/colors";

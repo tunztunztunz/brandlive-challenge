@@ -20,11 +20,13 @@ Given the mockup to this landing page, use vanilla JS or React to recreate the l
 
 ## What I did
 
-I used create-react-app to bootstrap a simple React IU because I'm familiar with it, enjoy working with components, and find creating interactivity is easier when working within react. The only package, besides react.js, that I pulled into the project was [react-player](https://www.npmjs.com/package/react-player) to help embed the youtube video inside the page.
+I used create-react-app to bootstrap a simple React UI because I'm familiar with it, enjoy working with components, and find creating interactivity is easier when working with react. The only package, besides react.js, that I pulled into the project was [react-player](https://www.npmjs.com/package/react-player) to help embed the youtube video inside the page.
 
 I tried to match the styles as closely as possible without actually having access to a Figma doc (or something similar). Similarly, I found the fonts online, but some were paid, so I left the fonts as the defaults because I did not think it was within the scope of the test.
 
 I decided to use css modules instead of a css framework because it felt a little overkill to bring one in for such a small project. If the project were much larger in scope I may consider using one or a tool like SASS/PostCSS.
+
+If I had more time, I would work on writing a test or two with jest to make sure the interactive elements on the page were running correctly.
 
 ## Available Scripts
 

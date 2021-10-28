@@ -4,28 +4,6 @@
   padding: 2rem 2rem 4rem;
 }
 
-.section:last-child {
-  padding: 1rem 2rem 2rem;
-}
-
-
-/* desktop layout */
-@media screen and (min-width: 1024px) {
-  .section {
-    padding: 4rem 11.5rem 1rem;
-    background-size: 155%;
-  }
-  /* To get close to spacing in design doc */
-  .section:first-child {
-    padding-bottom: 0;
-  }
-
-  /* To account for the spacing on the bottom of the document. */
-  .section:last-child {
-    padding: 5rem 12rem 2rem 12rem;
-  }
-}
-
 .sectionHeader {
   display: flex;
   flex-direction: column;
@@ -33,16 +11,26 @@
   align-items: center;
   text-align: center;
   margin: auto;
-  max-width: 80%;
+  max-width: 90%;
 }
 
 .sectionHeader h2 {
   margin: 0 0 1rem;
 }
 
+/* desktop layout */
 @media screen and (min-width: 1024px) {
-/* This is the setting that makes it match the designs on most desktop viewports. I may add another breakpoint to account for small desktops and pads. */
+  .section {
+    padding: 4rem 11.5rem 1rem;
+    background-size: 155%;
+  }
+
+  .section:first-child {
+    padding-bottom: 0;
+  }
+  
+
   .sectionHeader {
-  max-width: 50%;
+  max-width: 55%;
   }
 }

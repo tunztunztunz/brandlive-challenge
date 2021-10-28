@@ -19,7 +19,7 @@ const updateCountdown = (countdownDate: number) => {
       hours: String(hours),
       minutes: String(minutes).padStart(2, "0"),
       seconds: String(seconds).padStart(2, "0")
-    }
+    };
     return timeObject;
   }
 }

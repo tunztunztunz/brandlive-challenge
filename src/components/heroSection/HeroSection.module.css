@@ -14,12 +14,14 @@
   max-height: auto;
 }
 
+/* desktop layout */
 @media screen and (min-width: 1024px) {
   .heroSection {
     justify-content: space-between;
     flex-direction: row;
   }
-/* I'm not reusing the Section component because this one needs to be treated differently. */
+
+/* I'm not reusing the Section component's styles here because this one needs to be treated differently. */
 .textContainer {
     max-height: 100%;
     max-width: 43%;

@@ -11,13 +11,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-  /* This is the setting that makes it match the designs on most desktop viewports. I may add another breakpoint to account for small desktops and pads. This attribute is also different than the .sectionHeader
-  property in the Presenter component because it needs to be slightly larger (more horizontal space) per the
-  design. */
-  .sectionHeader {
-    max-width: 70%;
-  }
-
   .videoContainer {
     max-height: 28vw;
     width: 75%;
