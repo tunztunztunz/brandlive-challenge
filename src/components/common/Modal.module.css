@@ -16,7 +16,7 @@
 }
 
 .modal {
-  width: 30vw;
+  width: 50vw;
   height: auto;
   background-color: white;
   z-index: 10;
@@ -53,4 +53,8 @@
 .closeBtn:hover {
   box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
   transform: translate(-6px, 6px);
+}
+
+@media screen and (min-width: 1024px) {
+
 }
