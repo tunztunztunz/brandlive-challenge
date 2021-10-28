@@ -10,8 +10,8 @@ const Modal = ({ setIsOpen, name, position, bio }: ModalInterface) => {
       <div className={styles.modal}>
         <button className={styles.closeBtn} onClick={() => setIsOpen(false)}>&times;</button>
         <div className={styles.modalContent}>
-          <h3>{name}</h3>
-          <h4>{position}</h4>
+          <h4>{name}</h4>
+          <h5>{position}</h5>
           <p>{bio}</p>
         </div>
       </div>
