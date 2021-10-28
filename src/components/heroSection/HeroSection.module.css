@@ -22,7 +22,7 @@
 /* I'm not reusing the Section component because this one needs to be treated differently. */
 .textContainer {
     max-height: 100%;
-    max-width: 45%;
+    max-width: 43%;
     margin-right: 0rem;
   }
   .imageContainer {

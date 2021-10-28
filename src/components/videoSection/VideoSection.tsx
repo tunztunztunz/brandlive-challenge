@@ -1,11 +1,15 @@
 import ReactPlayer from 'react-player/lazy'
+import { Section } from '../common/Section';
 
-import yellowdrip from '../../images/yellowdrip.png'
+import colors from '../../utils/colors';
+
 import styles from './VideoSection.module.css';
 import globalStyles from '../../App.module.css';
 import headerStyles from '../common/Section.module.css';
-import { Section } from '../common/Section';
-import colors from '../../utils/colors';
+
+import yellowdrip from '../../images/yellowdrip.png'
+
+import text from '../../text/video.json';
 
 
 const VideoSection = () => {
@@ -14,9 +18,9 @@ const VideoSection = () => {
   return (
     <Section backgroundColor={colors.pink} backgroundImage={yellowdrip}>
       <div className={`${headerStyles.sectionHeader} ${styles.sectionHeader}`}>
-          <span className={globalStyles.xs}>our product</span>
-          <h2 className={globalStyles.lg}>Brandlive Greenroom 2.0</h2>
-          <p>Greenroom is built to handle many events throughout any calendar month with easy collaboration tools to make sure shows happen with proper planning.</p>
+          <span className={globalStyles.xs}>{text.kicker}</span>
+          <h2 className={globalStyles.lg}>{text.header}</h2>
+          <p>{text.mainCopy}</p>
       </div>
       <div className={styles.videoContainer}>
         <ReactPlayer url={videoLink} width={'100%'} height={'100%'} className={styles.reactPlayer} />

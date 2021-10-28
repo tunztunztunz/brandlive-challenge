@@ -22,9 +22,9 @@ p {
 }
 
 .xl {
-  font-size: 2.25rem;
-  font-weight: 650;
+  font-size: 2rem;
+  font-weight: 800;
   color: var(--color-white);
-  margin: 0;
+  margin: 0 0 .75rem;
 }
 

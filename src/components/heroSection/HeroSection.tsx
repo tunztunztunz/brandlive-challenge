@@ -1,20 +1,22 @@
 import { Section } from "../common/Section"
 
+import Countdown from "./countdown/Countdown";
+import colors from "../../utils/colors"
+
 import styles from './HeroSection.module.css';
 import globalStyles from '../../App.module.css';
-import wow from '../../images/wow.png';
-import colors from "../../utils/colors"
-import Countdown from "./countdown/Countdown";
 
+import wow from '../../images/wow.png';
+import text from '../../text/hero.json';
 
 
 const HeroSection = () => {
   return (
     <Section backgroundColor={colors.blue} className={styles.heroSection}>
       <div className={styles.textContainer}>
-        <span className={globalStyles.xs}>Starts on nov 03, 2021 at 10:00 am pdt</span>
-        <h1 className={globalStyles.xl}>Create standout virtual events, minus the cost and stress.</h1>
-        <p>Learn how to create immersive, visually stunning virtual experiences where your video content is the centerpiece.</p>
+        <span className={globalStyles.xs}>{text.kicker}</span>
+        <h1 className={globalStyles.xl}>{text.header}</h1>
+        <p>{text.mainCopy}</p>
         <Countdown />
       </div>
       <div className={styles.imageContainer}>

@@ -21,7 +21,7 @@ const BioSection = () => {
       bio: ''
   });
 
-  // Run checks to see if modal is open. If it is, then lock scroll. Otherwise, unlock scroll.
+  // Checks to see if modal is open. If it is, then lock scroll. Otherwise, unlock scroll.
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
