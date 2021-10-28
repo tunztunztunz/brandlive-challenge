@@ -1,31 +1,37 @@
 .section {
   background-repeat: no-repeat;
-  background-size: contain;
-  padding: 0 2rem 10rem;
+  background-size: 155%;
+  padding: 2rem 2rem 4rem;
+}
 
+.section:last-child {
+  padding: 1rem 2rem 2rem;
 }
 
 
 /* desktop layout */
 @media screen and (min-width: 1024px) {
   .section {
-    padding: 4rem 11.5rem 0;
-    background-size: auto;
+    padding: 4rem 11.5rem 1rem;
+    background-size: 155%;
+  }
+  /* To get close to spacing in design doc */
+  .section:first-child {
+    padding-bottom: 0;
   }
 
   /* To account for the spacing on the bottom of the document. */
-  .section:last-child{
-    margin-top: -1rem;
+  .section:last-child {
     padding: 5rem 12rem 2rem 12rem;
   }
 }
 
-/* So the background doesn't get cut off on 2k and ultrawide */
+/* So the background doesn't get cut off on 2k and ultrawide
 @media screen and (min-width: 2560px) {
   .section {
-    background-size: cover;
+    background-size: 155%;
   }
-}
+} */
 
 .sectionHeader {
   display: flex;
@@ -34,7 +40,7 @@
   align-items: center;
   text-align: center;
   margin: auto;
-  max-width: 100%;
+  max-width: 80%;
 }
 
 .sectionHeader h2 {

@@ -19,7 +19,7 @@ const VideoSection = () => {
           <p>Greenroom is built to handle many events throughout any calendar month with easy collaboration tools to make sure shows happen with proper planning.</p>
       </div>
       <div className={styles.videoContainer}>
-        <ReactPlayer url={videoLink} width="82%" height="100%" className={styles.reactPlayer} />
+        <ReactPlayer url={videoLink} width={'100%'} height={'100%'} className={styles.reactPlayer} />
       </div>
     </Section>
   )

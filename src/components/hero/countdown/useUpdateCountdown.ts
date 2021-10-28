@@ -1,8 +1,8 @@
 const updateCountdown = (countdownDate: number) => {
-  const second = 1000,
-  minute = second * 60,
-  hour = minute * 60,
-  day = hour * 24;
+  const second: number | string = 1000,
+  minute: number | string  = second * 60,
+  hour: number | string  = minute * 60,
+  day: number | string  = hour * 24;
 
   if (countdownDate) {
     const currentTime = new Date().getTime();
@@ -12,11 +12,16 @@ const updateCountdown = (countdownDate: number) => {
     let hours = Math.floor((distanceToEvent % day) / (hour));
     let minutes = Math.floor((distanceToEvent % hour) / (minute));
     let seconds = Math.floor((distanceToEvent % minute) / (second));
+
+    // if(minutes < 10) {
+    //   minutes = "0" + minutes;
+    // }
+    
     let timeObject = {
-      days: days,
-      hours: hours,
-      minutes: minutes,
-      seconds: seconds
+      days: String(days),
+      hours: String(hours),
+      minutes: String(minutes),
+      seconds: String(seconds)
     }
     return timeObject;
   }

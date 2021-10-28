@@ -1,6 +1,6 @@
 .footerContainer {
   display: grid;
-  grid-template-columns: .4fr 3fr .4fr;
+  grid-template-columns: 1fr 2fr 1fr;
   grid-gap: 1.25rem;
   margin-top: 1rem;
 }
@@ -18,4 +18,10 @@
 
 .terms span:nth-child(1) {
   margin-right: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .footerContainer {
+    grid-template-columns: .4fr 3fr .4fr;
+  }
 }

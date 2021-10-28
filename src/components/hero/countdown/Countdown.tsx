@@ -6,10 +6,10 @@ import styles from './Countdown.module.css';
 const Countdown = () => {
   const [countdownDate] = useState(new Date('11/04/2021').getTime());
   const [time, setTime] = useState({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0
+    days: '',
+    hours: '',
+    minutes: '',
+    seconds: ''
   })
 
   useEffect( () => {
