@@ -1,0 +1,36 @@
+.section {
+  background-repeat: no-repeat;
+  background-size: 180%;
+  padding: 2rem 2rem 4rem;
+}
+
+.sectionHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  max-width: 90%;
+}
+
+.sectionHeader h2 {
+  margin: 0 0 1rem;
+}
+
+/* desktop layout */
+@media screen and (min-width: 1024px) {
+  .section {
+    padding: 4rem 11.5rem 1rem;
+    background-size: 155%;
+  }
+
+  .section:first-child {
+    padding-bottom: 0;
+  }
+  
+
+  .sectionHeader {
+  max-width: 55%;
+  }
+}

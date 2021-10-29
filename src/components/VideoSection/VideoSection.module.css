@@ -1,0 +1,20 @@
+.videoContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  height: 50vw;
+}
+
+.reactPlayer {
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+@media screen and (min-width: 1024px) {
+  .videoContainer {
+    max-height: 28vw;
+    width: 75%;
+    margin: 2rem auto 2rem;
+    padding-bottom: 1.5rem;
+  }
+}

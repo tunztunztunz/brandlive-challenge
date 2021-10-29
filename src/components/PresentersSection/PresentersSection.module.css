@@ -1,0 +1,54 @@
+.biosContainer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin-top: 2rem;
+}
+
+.biosContainer img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+}
+
+.bio h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: .75rem 0 .5rem;
+}
+
+.bio h4 {
+  font-size: .75rem;
+  font-weight: 700;
+  margin: 0 0 .5rem;
+}
+
+.bio p {
+  font-size: .65rem;
+  line-height: 1rem;
+  font-weight: 300;
+  margin-top: 0;
+  padding-bottom: 3rem; 
+}
+
+
+/* Desktop layout */
+@media screen and (min-width: 1024px) {
+
+  .biosContainer {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .biosContainer img {
+    max-height: 50%;
+  }
+}
