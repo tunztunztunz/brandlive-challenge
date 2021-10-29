@@ -9,7 +9,7 @@ import text from '../../text/presenters.json';
 
 const Presenters = () => {
   return (
-    <Section backgroundColor={colors.yellow} backgroundImage={yellowdrip} className={styles.presentersContainer}>
+    <Section backgroundColor={colors.yellow} backgroundImage={yellowdrip} className={styles.presentersContainer}> 
       <div className={headerStyles.sectionHeader}>
         <span className={globalStyles.xs}>{text.kicker}</span>
         <h2 className={globalStyles.lg}>{text.header}</h2>
